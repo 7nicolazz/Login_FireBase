@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/fondoverde"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:background="@drawable/loginfinal"
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="1dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="Inicio de Sesion"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        android:textStyle="bold"></TextView>
+
+    <EditText
+        android:id="@+id/edtemail"
+        android:layout_width="299dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="50dp"
+        android:drawableRight="@drawable/email"
+
+        android:hint="@string/Etemail"
+        android:inputType="textEmailAddress"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18dp" />
+
+    <EditText
+        android:id="@+id/edtcontra"
+        android:layout_width="299dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="1dp"
+        android:drawableEnd="@drawable/pass"
+        android:hint="@string/Etcontraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginRight="20sp"
+        android:padding="10dp"
+        android:text="@string/BtnIniciar"
+        android:backgroundTint="#00acee"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/btnregistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="20sp"
+        android:padding="10dp"
+        android:text="@string/BtnRegistrar"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
+
+
+    <com.facebook.login.widget.LoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp" />
+
+
+</LinearLayout>
